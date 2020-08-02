@@ -6,7 +6,6 @@ output:
   BiocStyle::html_document:
     titlecaps: false
     toc_float: true
-bibliography: ref.bib
 ---
 
 ```{r style, echo=FALSE, results='hide', message=FALSE}
@@ -45,13 +44,6 @@ celltype <- read_csv(file.path(temp, "CellTypes.csv"))
 meta <- read_csv(file.path(data.path[["BFC3"]]))
 ```
 
-And get rid of the temporary folder and the cache.
-
-```{r}
-unlink(temp, recursive = T, force = T)
-unlink("raw_data", recursive = T, force = T)
-```
-
 Now, we want to clean the data up a bit.
 
 ```{r}
@@ -88,8 +80,15 @@ data <- data %>%
 Prepare all the files for storage on the `ExperimentHub`.
 
 ```{r}
-path <- file.path("scCyto", "Hafner-BreastCancer", "1.0")
+path <- file.path("scSpatial", "Hafner-BreastCancer", "1.0")
 dir.create(path, showWarnings=FALSE, recursive=TRUE)
 
 saveRDS(data, file=file.path(path, "spatialCellData.rds"))
+```
+
+And get rid of the temporary folder and the cache.
+
+```{r}
+unlink(temp, recursive = T, force = T)
+unlink("raw_data", recursive = T, force = T)
 ```
