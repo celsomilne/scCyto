@@ -3,3 +3,9 @@
 .Rhistory
 *raw_data*
 *temp*
+
+# Rmd outputs to make data
+*make*.html
+
+# Data to be uploaded to S3
+inst/scripts/scSpatial
