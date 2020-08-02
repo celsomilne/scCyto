@@ -4,15 +4,15 @@ FUN <- function(...) {
     # ?ExperimentHubData::makeExperimentHubMetadata
 
     data.frame(
-        Title="Hafner Breast Cancer",
+        Title="Hafner Breast Cancer Spatial Dataset",
         Description= "MCF 10A breast cell line (normal breast epithelial cells) was plated in 96-well plates and treated with different doses of one of eight small molecule perturbagens for up to 72 hr before being fixed and subjected to seven cycles of CycIF staining according to the protocol described below.",
-        BiocVersion="3.11",
+        BiocVersion="3.12",
         Maintainer="celsomilne@gmail.com",
         Genome="NA",
         SourceType="ZIP",
         SourceUrl="http://lincs.hms.harvard.edu/data/HMS_Dataset_20308.zip",
         SourceVersion="1.0",
-        RDataPath=file.path("scCyto", "Hafner-BreastCancer",
+        RDataPath=file.path("scSpatial", "Hafner-BreastCancer",
                             "1.0", "singleCellData.rds"),
         TaxonomyId="NA",
         Coordinate_1_based=T,
