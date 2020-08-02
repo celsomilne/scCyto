@@ -80,7 +80,7 @@ data <- data %>%
 Prepare all the files for storage on the `ExperimentHub`.
 
 ```{r}
-path <- file.path("scSpatial", "Hafner-BreastCancer", "1.0")
+path <- file.path("scSpatial", "Damond-Diabetes", "1.0")
 dir.create(path, showWarnings=FALSE, recursive=TRUE)
 
 saveRDS(data, file=file.path(path, "spatialCellData.rds"))
