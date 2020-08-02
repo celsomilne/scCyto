@@ -12,7 +12,7 @@ FUN <- function(...) {
         SourceType=\"CSV\",
         SourceUrl=NA,
         SourceVersion=NA,
-        RDataPath=file.path(\"scCyto\", \"${authorname}-${biosystem}\",
+        RDataPath=file.path(\"scSpatial\", \"${authorname}-${biosystem}\",
                             \"${current_version}\", \"singleCellData.rds\"),
         TaxonomyId=\"NA\",
         Coordinate_1_based=T,

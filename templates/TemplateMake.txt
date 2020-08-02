@@ -57,7 +57,7 @@ Now, we want to clean the data up a bit.
 Prepare all the files for storage on the `ExperimentHub`.
 
 ```{r}
-path <- file.path(\"scCyto\", \"${authorname}-${biosystem}\", \"1.0\")
+path <- file.path(\"scSpatial\", \"${authorname}-${biosystem}\", \"1.0\")
 dir.create(path, showWarnings=FALSE, recursive=TRUE)
 
 saveRDS(data, file=file.path(path, \"spatialCellData.rds\"))
