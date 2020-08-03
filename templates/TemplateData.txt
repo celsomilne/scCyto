@@ -1,3 +1,26 @@
+#' Obtain the ${authorname} ${biosystem} data
+#'
+#' Download and cache the ${authorname} ${biosystem} single-cell spatial (scSpatial) dataset from ExperimentHub,
+#' returning a \linkS4class{SegmentedCells} object for further use.
+#'
+#'
+#' @details
+#' This function provides the pancreas scSpatial data from ${authorname} <<YEAR>>
+#' in the form of a \linkS4class{SegmentedCells} object.
+#'
+#'
+#' @return A \linkS4class{SegmentedCells} object.
+#'
+#' @author Celso Milne
+#'
+#' @references
+#' <<FULL BIBLIOGRAPHY CITATION>>
+#'
+#' @examples
+#' sce <- ${authorname}${biosystem}Data()
+#'
+#' @export
+#' @importFrom spicyR SegmentedCells
 ${authorname}${biosystem}Data <- function(...) {
     version <- \"${current_version}\"
     sce <- .create_se(file.path(\"${authorname}-${biosystem}\", version), has.rowdata=FALSE, suffix=which)
