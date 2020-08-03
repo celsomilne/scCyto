@@ -5,7 +5,7 @@
 #'
 #'
 #' @details
-#' This function provides the pancreas scSpatial data from ${authorname} <<YEAR>>
+#' This function provides the ${biosystem} scSpatial data from ${authorname} <<YEAR>>
 #' in the form of a \linkS4class{SegmentedCells} object.
 #'
 #'
