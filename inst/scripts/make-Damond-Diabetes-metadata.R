@@ -15,7 +15,7 @@ FUN <- function(...) {
                     https://data.mendeley.com/datasets/cydmwsfztj/2/files/b0405cb9-2816-4bc9-9baa-16d0f509d873/Metadata.csv?dl=1",
         SourceVersion="1.0",
         RDataPath=file.path("scSpatial", "Damond-Diabetes",
-                            "1.0", "singleCellData.rds"),
+                            "1.0", "spatialCellData.rds"),
         TaxonomyId="NA",
         Coordinate_1_based=T,
         Species= "Homo sapiens",

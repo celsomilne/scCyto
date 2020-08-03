@@ -13,7 +13,7 @@ FUN <- function(...) {
         SourceUrl="http://lincs.hms.harvard.edu/data/HMS_Dataset_20308.zip",
         SourceVersion="1.0",
         RDataPath=file.path("scSpatial", "Hafner-BreastCancer",
-                            "1.0", "singleCellData.rds"),
+                            "1.0", "spatialCellData.rds"),
         TaxonomyId="NA",
         Coordinate_1_based=T,
         Species="Homo sapiens",

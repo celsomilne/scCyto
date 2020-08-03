@@ -8,7 +8,7 @@ FUN <- function(...) {
         SourceType="CSV",
         SourceUrl="http://lincs.hms.harvard.edu/db/datasets/20236/results?search=&output_type=.csv",
         SourceVersion="Jul 15 2020",
-        RDataPath=file.path("scSpatial", "Lin-Melanoma", "1.0", "singleCellData.rds"),
+        RDataPath=file.path("scSpatial", "Lin-Melanoma", "1.0", "spatialCellData.rds"),
         TaxonomyId="NA",
         Coordinate_1_based=T,
         Species="Homo sapiens",
