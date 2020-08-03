@@ -13,7 +13,7 @@ FUN <- function(...) {
         SourceUrl=NA,
         SourceVersion=NA,
         RDataPath=file.path(\"scSpatial\", \"${authorname}-${biosystem}\",
-                            \"${current_version}\", \"singleCellData.rds\"),
+                            \"${current_version}\", \"spatialCellData.rds\"),
         TaxonomyId=\"NA\",
         Coordinate_1_based=T,
         Species= \"Homo sapiens\",
