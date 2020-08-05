@@ -31,7 +31,7 @@ Now read it into our session.
 library(tidyverse)
 
 temp <- file.path("temp/")
-dir.create(temp, recursive = T)
+dir.create(temp, recursive = TRUE)
 unzip(data.path, exdir=temp)
 
 csv_file <- file.path(temp, "HMS_Dataset_20267", "HMS_Dataset_20267_data_file.csv")
@@ -72,6 +72,6 @@ saveRDS(data, file=file.path(path, "spatialCellData.rds"))
 And get rid of the temporary folder and the cache.
 
 ```{r}
-unlink(temp, recursive = T, force = T)
-unlink("raw_data", recursive = T, force = T)
+unlink(temp, recursive = TRUE, force = TRUE)
+unlink("raw_data", recursive = TRUE, force = TRUE)
 ```
