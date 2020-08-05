@@ -1,11 +1,11 @@
 Package: scSpatial
 Title: Single-Cell Spatial Data
-Version: 0.1
+Version: 0.1.0
 Authors@R:c(
     person(given = "Celso",
            family = "Milne",
            role = c("aut", "cre"),
-           email = "celsom@maths.usyd.edu.au"),
+           email = "celsomilne@gmail.com"),
     person(given = "Ellis",
            family = "Patrick",
            role = "aut",
@@ -15,12 +15,14 @@ Description: Single cell imaging for publicly available imaging data, provided a
 Depends:
     spicyR,
     tidyverse
+NeedsCompilation: no
 Imports:
     ExperimentHub
 biocViews:
     ExperimentHub,
     ExperimentData, 
-    ExpressionData
+    ExpressionData,
+    SingleCellData
 License: `use_mit_license()`
 Encoding: UTF-8
 LazyData: true
