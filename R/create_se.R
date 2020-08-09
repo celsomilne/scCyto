@@ -2,7 +2,7 @@
 #' @importFrom spicyR SegmentedCells
 .create_se <- function(dataset, hub=ExperimentHub(), ...) {
 
-  host <- file.path("scCyto", dataset)
+  host <- file.path("scSpatial", dataset)
   single_cell_path <- file.path(host, "spatialCellData.rds")
   cellData <- read_rds(single_cell_path)
 
